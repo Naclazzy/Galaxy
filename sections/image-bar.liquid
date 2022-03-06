@@ -1,3 +1,5 @@
+<h3 style="text-align: center;"> Instagram</h3>
+
 <div class="grid grid--no-gutters image-bar image-bar--{{ section.settings.section_height }}">
   {% case section.blocks.size %}
     {% when 1 %}
@@ -36,6 +38,8 @@
         {% endif %}
 
         {% if block.settings.cta_label != blank %}
+
+        
           <div class="image-bar__text">
             <h3 class="image-bar__caption">{{ block.settings.cta_label | escape }}</h3>
           </div>
