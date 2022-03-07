@@ -1,3 +1,4 @@
+
 <div class="product-template__container page-width"
   id="ProductSection-{{ section.id }}"
   data-section-id="{{ section.id }}"
@@ -135,7 +136,11 @@
       <div class="product-single__meta">
 
         <h1 class="product-single__title">{{ product.title }}</h1>
+        {% if product.tag contains affiliate %}
+        <h1>test</h1>
+        {% elsif %}
         <div>&#11088;&#11088;&#11088;&#11088;&#11088;</div>
+        {% endif %}
         <script>window.performance.mark('debut:product:title_visible');</script>
 
           <div class="product__price">
